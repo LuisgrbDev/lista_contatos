@@ -16,6 +16,7 @@ class usuarioDAO {
             values (:nome, :senha, :email, :token)";
 
             $stmt = $this->db->prepare($sql);
+
             $nome = $usuario->getNome();
             $senha = $usuario->getSenha();
             $email = $usuario->getEmail();
