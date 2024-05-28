@@ -19,8 +19,7 @@ class Database
         }
     }
 
-    // Singleton Design Pattern
-    // https://refactoring.guru/design-patterns/singleton
+    
     public static function getInstance()
     {
         if (!self::$instance) {
