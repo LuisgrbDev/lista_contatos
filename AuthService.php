@@ -52,9 +52,13 @@ if ($type === "register") {
         $token = bin2hex(random_bytes(25));
         // atualizar o token do usuario
         $usuarioDAO->updateToken($usuario->getId(),$token);
-        $_SESSION['token'] = $token;
+        $_SESSION['token']=$token;
         header('Location: index.php');
+        exit();
     } else{
         echo "Email ou Senha inválidados";
     }
 }
+
+
+
